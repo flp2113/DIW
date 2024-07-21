@@ -1,0 +1,76 @@
+#profile, #repositories, #highlight, #team{ padding: 15px; }
+
+/*MAIN*/
+    /*PROFILE*/
+#profile-picture{
+    width: 250px;
+    height: 250px;
+    border: 3px solid var(--pal-cian);
+}
+
+.socialmedia-icons{
+    width: 40px;
+    height: 40px;
+}
+
+#profile{
+    display: flex;
+    gap: 25px;
+}
+
+#profile-name{
+    display: flex;
+    gap: 25px;
+}
+
+    /*REPOSITORIES*/
+#repositories{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.repository-info{
+    display: flex;
+    gap: 15px;
+}
+
+.card{ transition: 0.2s all; }
+.card:hover{
+    cursor: pointer;
+    border: 1px solid var(--pal-cian);
+    transform: translateY(-5px);
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--pal-white);
+}
+
+.card-text{ font-size: 14px; }
+
+.card-title{ color: var(--pal-red) !important; }
+
+    /*TEAM*/
+#team{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.team-picture{
+    width: 200px;
+    height: 200px;
+    border: 3px solid var(--pal-cian);
+    border-radius: 2px;
+}
+
+.team-name{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.team-link{ text-decoration: none; }
